@@ -1,5 +1,5 @@
 ---
-title: A page for you
+title: Simple News Page
 layout: base.njk
 ---
 
@@ -9,5 +9,19 @@ layout: base.njk
   <div class="love">
     ❤️
   </div>
+  <ul>
+    {% for article in news.articles %}
+    <li>
+      <h4>
+        <a href="{{article.url}}" target="_blank">
+          {{article.title}}
+        </a>
+      </h4>
+      <span style="font-weight: 600;">
+        {{ article.source.name }} - <time>{{ article.publishedAt }}</time>
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
 <script src="/js/vibe.js"></script>
