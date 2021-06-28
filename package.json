@@ -1,0 +1,16 @@
+{
+  "name": "fcc-jamstack-one",
+  "version": "1.0.0",
+  "description": "Simple JAMstack static site created with Eleventy",
+  "main": "vibe.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "Rodrigo Hernando <phil@netlify.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
